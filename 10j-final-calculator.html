@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/10j-final-calculator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="js-calculation calculation-button"></p>
+      <p>
+        <button
+          onclick="
+       updateCalculation('1')
+      "
+      on
+          class="number"
+        >
+          1
+        </button>
+        <button
+          onclick="
+   updateCalculation('2')
+  "
+          class="number"
+        >
+          2
+        </button>
+        <button
+          onclick="
+   updateCalculation('3')
+
+  "
+          class="number"
+        >
+          3
+        </button>
+        <button
+          onclick="
+   updateCalculation('+')
+
+  "
+          class="math"
+        >
+          +
+        </button>
+      </p>
+      <p>
+        <button
+          onclick="
+   updateCalculation('4')
+
+      "
+          class="number"
+        >
+          4
+        </button>
+        <button
+          onclick="
+   updateCalculation('5')
+
+  "
+          class="number"
+        >
+          5
+        </button>
+        <button
+          onclick="
+   updateCalculation('6')
+ 
+  "
+          class="number"
+        >
+          6
+        </button>
+        <button
+          onclick="
+   updateCalculation('-')
+
+  "
+          class="math"
+        >
+          -
+        </button>
+      </p>
+      <p>
+        <button
+          onclick="
+   updateCalculation('7')
+
+      "
+          class="number"
+        >
+          7
+        </button>
+        <button
+          onclick="
+   updateCalculation('8')
+
+  "
+          class="number"
+        >
+          8
+        </button>
+        <button
+          onclick="
+   updateCalculation('9')
+
+  "
+          class="number"
+        >
+          9
+        </button>
+        <button
+          onclick="
+   updateCalculation('*')
+
+  "
+          class="math"
+        >
+          *
+        </button>
+      </p>
+      <p>
+        <button
+          onclick="
+   updateCalculation('0')
+
+      "
+          class="number"
+        >
+          0
+        </button>
+        <button
+          onclick="
+   updateCalculation('.')
+
+  "
+          class="number"
+        >
+          .
+        </button>
+        <button
+          onclick="
+      eval(calculation);
+      calculation=eval(calculation);
+      displayCalculation();
+      localStorage.setItem('calculation',calculation);
+  "
+          class="number"
+        >
+          =
+        </button>
+        <button
+          onclick="
+   updateCalculation('/')
+"
+          class="math"
+        >
+          /
+        </button>
+      </p>
+      <p>
+        <button
+          onclick="
+       displayCalculation();
+        calculation=''
+        localStorage.setItem('calculation',calculation);
+      "
+          class="clear-button"
+        >
+          Clear
+        </button>
+      </p>
+    </div>
+    <script src="scripts/10j-final-calculator.js"></script>
+  </body>
+</html>
